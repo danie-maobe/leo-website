@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEONNESTAR Sidebar & Footer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="flex bg-gray-100 min-h-screen">
+
+  <!-- Sidebar Navigation -->
+  <aside class="w-64 h-screen bg-gradient-to-b from-purple-700 via-pink-600 to-red-500 text-white shadow-lg flex flex-col justify-between">
+    <div>
+      <h2 class="text-2xl font-bold text-center py-6 border-b border-pink-400">LEONNESTAR</h2>
+      <nav class="mt-6">
+        <ul class="space-y-4 px-6">
+          <li><a href="home.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-purple-900 transition"><i class="fas fa-home"></i><span>Home</span></a></li>
+          <li><a href="about.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-pink-800 transition"><i class="fas fa-info-circle"></i><span>About</span></a></li>
+          <li><a href="subsidiaries.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-red-700 transition"><i class="fas fa-building"></i><span>Subsidiaries</span></a></li>
+          <li><a href="services.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-orange-700 transition"><i class="fas fa-cogs"></i><span>Services</span></a></li>
+          <li><a href="contact.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-yellow-600 transition"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Sidebar Footer -->
+    <div class="text-center py-4 border-t border-pink-400">
+      <p class="text-sm">© 2025 LEONNESTAR</p>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="flex-1 p-10">
+    <h1 class="text-4xl font-extrabold text-purple-700">Welcome to LEONNESTAR</h1>
+    <p class="mt-4 text-lg text-gray-700">Your sidebar navigation and footer are now colorful and eye-catching 🎨</p>
+  </main>
+
+  <!-- Page Footer -->
+  <footer class="absolute bottom-0 left-64 right-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-4 text-center">
+    <p>Follow us:</p>
+    <div class="space-x-6 mt-2 text-2xl">
+      <a href="#" class="hover:text-yellow-300"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="hover:text-yellow-300"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="hover:text-yellow-300"><i class="fab fa-linkedin"></i></a>
+      <a href="#" class="hover:text-yellow-300"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>

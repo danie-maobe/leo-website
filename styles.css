@@ -1,0 +1,37 @@
+/* Bold, attractive buttons */
+
+/* Main big buttons (for navigation, home, about, services, etc.) */
+.btn-main {
+    font-weight: bold;            /* Make text bold */
+    font-size: 1.25rem;           /* Bigger text */
+    text-transform: uppercase;    /* ALL CAPS */
+    padding: 1rem 2rem;           /* Space inside */
+    border-radius: 0.75rem;       /* Rounded corners */
+    color: white;                 /* White text */
+    background: linear-gradient(to right, #2563eb, #7c3aed); /* Blue → Purple gradient */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Shadow */
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .btn-main:hover {
+    background: linear-gradient(to right, #7c3aed, #2563eb); /* Reverse gradient on hover */
+    transform: scale(1.1); /* Slightly bigger */
+  }
+  
+  /* Smaller form buttons (like contact form) */
+  .btn-small {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    background: linear-gradient(to right, #10b981, #0d9488); /* Green → Teal */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .btn-small:hover {
+    background: linear-gradient(to right, #0d9488, #10b981);
+    transform: scale(1.05);
+  }
+  

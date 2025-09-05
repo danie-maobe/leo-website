@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - LEONNESTAR COMPANY LTD</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .form-box {
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(6px);
+    }
+    .input-field {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      margin-bottom: 15px;
+    }
+    .input-field:focus {
+      box-shadow: 0 0 10px #38bdf8;
+    }
+    .btn-submit {
+      background: linear-gradient(90deg, #2563eb, #9333ea);
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .btn-submit:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <header class="fixed top-0 left-0 h-screen w-48 p-6">
+    <h1 class="text-2xl font-bold text-center mb-6">LEONNESTAR</h1>
+    <nav>
+      <ul class="list-disc list-inside space-y-4 text-lg">
+        <li><a href="home.html">🏠 Home</a></li>
+        <li><a href="about.html">ℹ️ About</a></li>
+        <li><a href="subsidiaries.html">🏢 Subsidiaries</a></li>
+        <li><a href="services.html">⚙️ Services</a></li>
+        <li><a href="contact.html">📞 Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="ml-52 min-h-screen bg-cover bg-center flex items-center justify-center p-10" 
+        style="background-image: url('https://picsum.photos/1600/900?random=5');">
+    
+    <div class="form-box p-10 rounded-2xl w-full max-w-2xl text-white">
+      <h2 class="text-4xl font-bold text-center mb-6">Contact Us</h2>
+      <p class="text-center mb-8">We’d love to hear from you! Fill out the form below and we’ll get back to you.</p>
+
+      <!-- Contact Form -->
+      <form>
+        <input type="text" placeholder="Your Name" class="input-field">
+        <input type="email" placeholder="Your Email" class="input-field">
+        <textarea placeholder="Your Message" rows="5" class="input-field"></textarea>
+        <button type="submit" class="btn-submit w-full">Send Message</button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div>
+          <i class="fas fa-map-marker-alt text-3xl text-red-400 mb-2"></i>
+          <p>Nairobi, Kenya</p>
+        </div>
+        <div>
+          <i class="fas fa-phone text-3xl text-green-400 mb-2"></i>
+          <p>+254 712 364 908</p>
+        </div>
+        <div>
+          <i class="fas fa-envelope text-3xl text-yellow-400 mb-2"></i>
+          <p>info@leonnestar.com</p>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn-small w-full">📨 Send Message</button>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="ml-52 text-center py-6">
+    <p>© 2025 LEONNESTAR COMPANY LTD. All Rights Reserved.</p>
+    <div class="mt-3 space-x-6 text-2xl">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>

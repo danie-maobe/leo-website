@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leonnestar Subsidiaries</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px;
+      color: #2c3e50;
+    }
+
+    .subsidiaries {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-header {
+      padding: 15px;
+      background: #2c3e50;
+      color: white;
+      cursor: pointer;
+    }
+
+    .card-content {
+      padding: 15px;
+      display: none;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (min-width: 700px) {
+      .subsidiaries {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Subsidiaries</h1>
+
+  <div class="subsidiaries">
+    <!-- Subsidiary 1 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/800x600/?cybersecurity" alt="Leonnestar Cybers">
+      <div class="card-header" onclick="toggleContent(this)">Leonnestar Cybers</div>
+      <div class="card-content">
+        <p>Providing world-class cybersecurity services and IT solutions for businesses and individuals.</p>
+      </div>
+    </div>
+
+    <!-- Subsidiary 2 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/800x600/?education" alt="Leonnestar Technical Training Institute">
+      <div class="card-header" onclick="toggleContent(this)">Leonnestar Technical Training Institute</div>
+      <div class="card-content">
+        <p>Equipping learners with technical and vocational skills for the modern workforce.</p>
+      </div>
+    </div>
+
+    <!-- Subsidiary 3 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/800x600/?logistics,truck" alt="Leonnestar Transport & Logistics Company">
+      <div class="card-header" onclick="toggleContent(this)">Leonnestar Transport & Logistics Company</div>
+      <div class="card-content">
+        <p>Reliable transport and logistics solutions for local and international clients.</p>
+      </div>
+    </div>
+
+    <!-- Subsidiary 4 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/800x600/?farm,agriculture" alt="Leonnestar Farm Ltd">
+      <div class="card-header" onclick="toggleContent(this)">Leonnestar Farm Ltd</div>
+      <div class="card-content">
+        <p>Sustainable farming practices producing fresh and healthy agricultural products.</p>
+      </div>
+    </div>
+
+    <!-- Subsidiary 5 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/800x600/?store,shopping" alt="Leonnestar Stores">
+      <div class="card-header" onclick="toggleContent(this)">Leonnestar Stores</div>
+      <div class="card-content">
+        <p>Your one-stop shop for quality products across multiple categories.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleContent(header) {
+      const content = header.nextElementSibling;
+      content.style.display = content.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
